@@ -9,7 +9,7 @@ const Banner = () => {
         <div className='banner'>
             <div className='banner__search'>
                 {showSearch && <Search />}
-                <button onClick={()=> setShowSearch(!showSearch)} variant='outlined' className='banner__searchButton'>Search Dates</button>
+                <button onClick={()=> setShowSearch(!showSearch)} variant='outlined' className='banner__searchButton'>{showSearch ? "Hide" : "Search Dates"}</button>
             </div>
             <div className='banner__info'>
                 <h1>Get Out and Stretch Your imagination</h1>
